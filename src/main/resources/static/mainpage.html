@@ -5,6 +5,29 @@
     <title>Section Optimization Tool</title>
     <script src="index.js"></script>
 </head>
+
+<style>
+body {
+  background-color: lightblue;
+}
+
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
 <body>
 <div style="display:table;">
     <table id = "requests" style="width:200%">
@@ -16,9 +39,12 @@
         </tr>
     </table>
 </div>
-<div id = "button">
-    <button onclick="goToUploadPage()">Upload CSV</button>
 
+<div class="container">
+    <div class="center">
+        <button onclick="goToUploadPage()">Upload CSV</button>
+    </div>
 </div>
+
 </body>
 </html>
